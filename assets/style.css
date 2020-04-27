@@ -33,6 +33,11 @@ html {
     margin: 0;
 }
 
+.section-history {
+    margin-top: 25px;
+    max-height: 600px;
+}
+
 .div-box {
     width: 50%;
     height: 400px;
@@ -126,13 +131,22 @@ h3 {
 }
 
 div .div-paragraph {
-    font-family: devioussans02extrabold,Helvetica Neue,Helvetica,Arial,メイリオ, meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+    font-family: devioussans02extrabold, Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif;
     line-height: 33px;
     font-size: 25px;
     text-align: justify;
     color: #bfbfbf;
-    font-weight:700;
+    font-weight: 700;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.616);
+}
+
+div .div-paragraph2 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    font-size: 25px;
+    text-align: start;
+    color: #000;
+    font-weight: 600;
 }
 
 .div-perfil {
@@ -157,12 +171,12 @@ figure img:hover {
 }
 
 figure figcaption {
-line-height: 30px;
-font-size: 20px;
-color: #bfbfbf;
-text-align: justify;
-font-weight: 700;
-margin-top: 0;
+    line-height: 30px;
+    font-size: 20px;
+    color: #bfbfbf;
+    text-align: justify;
+    font-weight: 700;
+    margin-top: 0;
 }
 
 .div-img {
@@ -175,5 +189,73 @@ margin-top: 0;
 }
 
 .div-img:hover {
+    filter: grayscale(0);
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.div-img2 {
+    overflow: hidden;
+    filter: grayscale(100%);
+    transition: .3s ease-in-out;
+    min-width: 40%;
+    position: relative;
+}
+
+.div-img2>img {
+    position: absolute;
+    top: 0;
+    /* left: calc(50% - 100px); */
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+.div-img2 img {
+    height: 100%;
+    width: 100%;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+img:nth-child(4) {
+    animation-delay: 6s;
+}
+
+img:nth-child(5) {
+    animation-delay: 8s;
+}
+
+.div-img2:hover {
     filter: grayscale(0);
 }
