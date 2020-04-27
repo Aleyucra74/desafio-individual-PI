@@ -7,7 +7,7 @@
 html,
 body {
     height: 100%;
-    background-color: #c4c4c4;
+    background-color: #000;
 }
 
 html {
@@ -43,7 +43,7 @@ html {
 }
 
 .bgc-red {
-    background-color: #000066;
+    background-color: #C9F2E8;
 }
 
 h1 {
@@ -130,9 +130,9 @@ div .div-paragraph {
     line-height: 33px;
     font-size: 25px;
     text-align: justify;
-    color: #a7a7a7;
+    color: #bfbfbf;
     font-weight:700;
-    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.616);
 }
 
 .div-perfil {
@@ -148,13 +148,32 @@ figure {
 
 figure img {
     border-radius: 50%;
+    filter: grayscale(100%);
+    transition: .3s ease-in-out;
+}
+
+figure img:hover {
+    filter: grayscale(0);
 }
 
 figure figcaption {
 line-height: 30px;
 font-size: 20px;
-color: #a7a7a7;
+color: #bfbfbf;
 text-align: justify;
 font-weight: 700;
 margin-top: 0;
+}
+
+.div-img {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./img/educhaves.jpg');
+    filter: grayscale(100%);
+    transition: .3s ease-in-out;
+}
+
+.div-img:hover {
+    filter: grayscale(0);
 }
