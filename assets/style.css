@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 25px;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #c4c4c4;
+}
+
+html {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.section-row {
+    display: flex;
+    flex-direction: row;
+    margin-right: -15px;
+    margin-left: -15px;
+    min-height: 400px;
+    background-color: #fff;
+    margin: 0;
+}
+
+.div-box {
+    width: 50%;
+    height: 400px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgc-red {
+    background-color: #000066;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 5rem;
+    columns: #222222;
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h3 {
+    columns: #222222;
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+.glitch-window {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    width: 100%;
+    color: #222222;
+    text-shadow: 2px 0 #f9f8f8, -1px 0 yellow, -2px 0 green;
+    overflow: hidden;
+    animation: crt-me 2500ms infinite linear alternate-reverse;
+    /* background: red; */
+}
+
+/* //Animation Keyframes */
+@keyframes crt-me {
+    0% {
+        clip: rect(31px, 9999px, 94px, 0)
+    }
+
+    10% {
+        clip: rect(112px, 9999px, 76px, 0)
+    }
+
+    20% {
+        clip: rect(85px, 9999px, 77px, 0)
+    }
+
+    30% {
+        clip: rect(27px, 9999px, 97px, 0)
+    }
+
+    40% {
+        clip: rect(64px, 9999px, 98px, 0)
+    }
+
+    50% {
+        clip: rect(61px, 9999px, 85px, 0)
+    }
+
+    60% {
+        clip: rect(99px, 9999px, 114px, 0)
+    }
+
+    70% {
+        clip: rect(34px, 9999px, 115px, 0)
+    }
+
+    80% {
+        clip: rect(98px, 9999px, 129px, 0)
+    }
+
+    90% {
+        clip: rect(43px, 9999px, 96px, 0)
+    }
+
+    100% {
+        clip: rect(82px, 9999px, 64px, 0)
+    }
+
+}
+
+div .div-paragraph {
+    font-family: devioussans02extrabold,Helvetica Neue,Helvetica,Arial,メイリオ, meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+    line-height: 33px;
+    font-size: 25px;
+    text-align: justify;
+    color: #a7a7a7;
+    font-weight:700;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.div-perfil {
+    flex-direction: column;
+    text-align: justify;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    border-radius: 50%;
+}
+
+figure figcaption {
+line-height: 30px;
+font-size: 20px;
+color: #a7a7a7;
+text-align: justify;
+font-weight: 700;
+margin-top: 0;
+}
