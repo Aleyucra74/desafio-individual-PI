@@ -1,0 +1,29 @@
+{
+  "name": "desafio-site-individual",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleyucra74/desafio-individual-PI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aleyucra74/desafio-individual-PI/issues"
+  },
+  "homepage": "https://github.com/Aleyucra74/desafio-individual-PI#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
