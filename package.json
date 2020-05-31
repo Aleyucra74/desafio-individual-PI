@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Aleyucra74/desafio-individual-PI#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
     "knex": "^0.21.1",

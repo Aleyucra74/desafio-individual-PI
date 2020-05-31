@@ -1,24 +1,16 @@
 const express = require('express');
 const app = express();
 const handlebars = require('express-handlebars');
-const Sequilize = require('sequelize');
+const bodyparser = require('body-parser');
 
 
 //config
     //template
     app.engine('handlebars', handlebars({defaultLayout: 'main'}))
     app.set('view engine', 'handlebars')
-    //conexao bd
-    const sequelize = new Sequilize('testenode', 'root', '', {
-        host: 'localhost',
-        dialect: 'mysql'
-    })
-    
-    sequelize.authenticate().then(function(){
-        console.log('conectado com sucesso');
-    }).catch(function(erro){
-        console.log('falha ao se conectar'+erro);
-    })
+    //bodyparser
+    app.use(bodyparser.urlencoded({extended:false}))
+    app.use(bodyparser.json())
 
 //routes
     app.get('/home', function(req,res){
