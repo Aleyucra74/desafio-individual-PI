@@ -89,17 +89,17 @@
                 <h3>Formulario de contato - Fale Comigo</h3>
             </div>
             <div class="cor-secundaria">
-                <form action="">
+                <form action="/new" method="POST">
                     <div class="one">
                         <div class="group">
-                            <input type="text" required>
+                            <input type="text" name="name" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Seu nome</label>
                         </div>
 
                         <div class="group">
-                            <input type="text" required>
+                            <input type="text" name="email" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Seu email</label>
@@ -107,14 +107,14 @@
 
 
                         <div class="group">
-                            <input type="text" required>
+                            <input type="text" name="where" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>onde me conhece</label>
                         </div>
 
                         <div class="group">
-                            <input type="text" required>
+                            <input type="text" name="phone" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>numero</label>
@@ -122,9 +122,9 @@
                     </div>
                         <div class="form-class two">
                             <label for="msg" class="lblText">Me conte algo</label>
-                            <textarea name="msg" id="msg" cols="60" rows="10" class=""></textarea>
+                            <textarea name="message" id="msg" cols="60" rows="10" class=""></textarea>
 
-                            <button class="bubbly-button">Envie sua mensagem</button>
+                            <button class="bubbly-button" type="submit">Envie sua mensagem</button>
                         </div>
                 </form>
             </div>
