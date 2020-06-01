@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Aleyucra74/desafio-individual-PI#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
     "knex": "^0.21.1",
@@ -26,6 +27,7 @@
     "sequelize": "^5.21.11"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "sequelize-cli": "^5.5.1"
   }
 }

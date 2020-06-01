@@ -123,6 +123,22 @@ form .lblText {
     padding: 0;
 }
 
+.cor-terciaria h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    color: #fff;
+}
+
+.cor-terciaria h3>a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
 .div-box {
     width: 50%;
     height: 400px;
@@ -267,7 +283,7 @@ figure figcaption {
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    background-image: url('./img/educhaves.jpg');
+    background-image: url('../img/educhaves.jpg');
     filter: grayscale(100%);
     transition: .3s ease-in-out;
 }
