@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/Aleyucra74/desafio-individual-PI#readme",
   "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
+    "handlebars": "^4.7.6",
     "knex": "^0.21.1",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.11"

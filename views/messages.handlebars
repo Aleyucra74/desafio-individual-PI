@@ -1,0 +1,22 @@
+<main class="container">
+
+    <section>
+        <div class="cor-primaria">
+            <h3>Mensagens recebidas</h3>
+        </div>
+        <section class="grid">
+        {{#each mensagem}}
+        <div class="grid-messages">
+            <p>Id: {{id}}</p>
+            <p>Nome: {{this.name}}</p>
+            <p>Email: {{email}}</p>
+            <p>De onde: {{#toJson this}}{{/toJson}}</p>
+            <p>Numero: {{phone}}</p>
+            <textarea readonly>{{message}}</textarea>
+        </div>
+        {{/each}}
+        </section>
+
+    </section>
+
+</main>

@@ -1,8 +1,12 @@
 const express = require('express');
 const app = express();
+const hbs = require('handlebars');
 const handlebars = require('express-handlebars');
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
 const bodyparser = require('body-parser');
 const cors = require('cors');
+const {Messagem} = require('./src/app/models/Message');
+const sequelize = require('sequelize');
 // const Admin = require('./routes/Admin');
 // const Mensagem = require('./routes/Mensagem');
 const path = require('path');
@@ -11,7 +15,15 @@ const routes = require('./src/routes');
 
 //config
     //template
-    app.engine('handlebars', handlebars({defaultLayout: 'main'}))
+    app.engine('handlebars', handlebars({
+        defaultLayout: 'main',
+        handlebars: allowInsecurePrototypeAccess(hbs),
+        helpers: {
+            toJson: function(object){
+                return JSON.stringify(object);
+            }
+        },
+    }));
     app.set('view engine', 'handlebars')
     //bodyparser
     app.use(bodyparser.urlencoded({extended:false}))
@@ -24,6 +36,11 @@ const routes = require('./src/routes');
     app.get('/', function(req, res){
         res.render('body')
     })
+    // app.get('/show',async function(req,res) {
+    //     await Messagem.findAll().then(function(mensagem) {
+    //         res.render('messages', {mensagem:mensagem});
+    //     })
+    // });
     app.use(routes);
     // Message.create({name: 'ale', email: 'ale@alee.com', where: 'escola', phone: 943666677, message: 'ois'});
     
