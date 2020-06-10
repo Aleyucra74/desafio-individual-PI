@@ -25,7 +25,7 @@ module.exports = {
       type: Sequelize.STRING,
       unique: true,
     },
-    where: {
+    onde: {
       allowNull: false,
       type: Sequelize.STRING,
     },

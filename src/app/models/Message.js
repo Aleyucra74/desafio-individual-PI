@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
           isEmail: true,
         },
       },
-      where: DataTypes.STRING,
+      onde: DataTypes.STRING,
       phone: {
         type: DataTypes.DOUBLE,
         validate: {

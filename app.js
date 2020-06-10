@@ -19,8 +19,9 @@ const routes = require('./src/routes');
         defaultLayout: 'main',
         handlebars: allowInsecurePrototypeAccess(hbs),
         helpers: {
-            toJson: function(object){
-                return JSON.stringify(object);
+            toJson: function(obj){
+                let a = JSON.stringify(obj);
+                return console.log(a.id);
             }
         },
     }));
