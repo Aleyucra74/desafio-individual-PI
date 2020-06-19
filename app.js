@@ -37,6 +37,9 @@ const routes = require('./src/routes');
     app.get('/', function(req, res){
         res.render('body')
     })
+    app.get('/login', function(req, res){
+        res.render('login')
+    })
     // app.get('/show',async function(req,res) {
     //     await Messagem.findAll().then(function(mensagem) {
     //         res.render('messages', {mensagem:mensagem});
