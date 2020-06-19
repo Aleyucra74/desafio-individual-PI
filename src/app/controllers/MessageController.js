@@ -1,7 +1,7 @@
 const { Message } = require('../models');
 const express = require('express');
 const send = express();
-
+const alert = require('alert');
 class MessageController {
   async index(req, res) {
     try {
@@ -19,9 +19,10 @@ class MessageController {
 
   async store(req, res) {
     try {
-      const message = await Message.create(req.body);
-
-      return res.json(message);
+        await Message.create(req.body);
+        // alert('Mensagem enviada com sucesso', 'console');
+        alert('Mensagem enviada com sucesso');
+        return res.redirect('/');
     } catch (err) {
       return res.status(400).json({ error: err.message });
     }
