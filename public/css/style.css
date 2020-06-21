@@ -232,13 +232,10 @@ h3 {
 }
 
 div .div-paragraph {
-    font-family: devioussans02extrabold, Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     line-height: 33px;
     font-size: 25px;
     text-align: justify;
-    color: #bfbfbf;
-    font-weight: 700;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.616);
 }
 
 div .div-paragraph2 {
@@ -263,20 +260,13 @@ figure {
 
 figure img {
     border-radius: 50%;
-    filter: grayscale(100%);
-    transition: .3s ease-in-out;
 }
 
-figure img:hover {
-    filter: grayscale(0);
-}
 
 figure figcaption {
     line-height: 30px;
     font-size: 20px;
-    color: #bfbfbf;
     text-align: justify;
-    font-weight: 700;
     margin-top: 0;
 }
 
@@ -285,12 +275,6 @@ figure figcaption {
     background-size: cover;
     background-position: center;
     background-image: url('../img/educhaves.jpg');
-    filter: grayscale(100%);
-    transition: .3s ease-in-out;
-}
-
-.div-img:hover {
-    filter: grayscale(0);
 }
 
 @keyframes display {
@@ -322,7 +306,6 @@ figure figcaption {
 
 .div-img2 {
     overflow: hidden;
-    filter: grayscale(100%);
     transition: .3s ease-in-out;
     min-width: 40%;
     position: relative;
@@ -357,9 +340,10 @@ img:nth-child(5) {
     animation-delay: 8s;
 }
 
-.div-img2:hover {
-    filter: grayscale(0);
-}
+/* img:nth-child(6) {
+    animation-delay: 10s;
+} */
+
 
 /* form */
 .group {
