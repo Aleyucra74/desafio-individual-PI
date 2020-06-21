@@ -7,6 +7,7 @@ const bodyparser = require('body-parser');
 const cors = require('cors');
 const {Messagem} = require('./src/app/models/Message');
 const sequelize = require('sequelize');
+const { errors } = require('celebrate');
 // const Admin = require('./routes/Admin');
 // const Mensagem = require('./routes/Mensagem');
 const path = require('path');
@@ -50,7 +51,7 @@ const routes = require('./src/routes');
     
     // app.use('/admin', Admin)
     // app.use('/mensagem', Mensagem)
-
+    app.use(errors());
 app.listen(3333, function (){
     console.log('servidor rodando na url http://localhost:3333');
 });
